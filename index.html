@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+     <!-- MENU ENCABEZADO -->
+     <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Люда</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">На головну</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">Про мене</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">Цікаві факти</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/photo_2023-06-24_18-43-30.jpg" alt="">
+            </div>
+            <h1>Люда</h1>
+            <h2></h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                <a href="#"><i class="fa-brands fa-viber"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Про мене</h2>
+            <p><span>Привіт мене звати Люда.</span> На цій сторінці портфоліо ви можете більше дізнатися про мене та мої інтереси. Наразі я навчаюсь у м.Хмельницький у вищому навчальному закладі ХНУ; Факультет інформаційних технологій, спеціальнісьть 126-Інформаційні системи та технології </p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Персональна інформація</h3>
+                    <ul>
+                        <li>
+                            <strong>День народження</strong>
+                            20/04/2005
+                        </li>
+                        <li>
+                            <strong>Телефон</strong>
+                                +380 98 240 83 37
+                        </li>
+                        <li>
+                            <strong>Адреса</strong>
+                            М.Хмельницький
+                        </li>
+                        <li>
+                            <strong>Емейл</strong>
+                            yantkovaludmila@gmail.com
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Цікавлюсь</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-brush"></i>
+                            <span>DRAW</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSIC</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>TRAVEL</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-android"></i>
+                            <span>ANDROID</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>WALK</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>BOOK</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>CAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>PHOTO</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Цікаві факти</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3></h3>
+                    <div class="item izq">
+                        <h4> </h4>
+                        <span class="casa">Художня школа</span>
+                        <span class="fecha">2015 - 2017</span>
+                        <p>Напротязі 3-ьох років я ходила в художню школу та навіть думала зв'язати своє життя з цією професією , але сталося все зовсім по іншому.
+                        Хоч я так і не стала відомим художником та не присвятила цьому мистецтву своє життя, але я й досі люблю малювати у вільний час.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="col derecha">
+                    <h3></h3>
+                    <div class="item der">
+                        <h4></h4>
+                        <span class="casa">Фото</span>
+                        <span class="fecha">2017 - 2018</span>
+                        <p>Також в дитинстві я дуже любила фотографувати.Я фотографувала все що бачила і все що подобалось, навіть просила у батьків купити мені фотоапарат.
+                        Але потім це просто переросло в хоббі і навіть зараз я люблю фотографувати людей.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+ 
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+            <a href="#"><i class="fa-brands fa-viber"></i></a>
+        </div>
+    </footer>
+
+<script src="main.js"></script>
+
+</body>
+</html>
